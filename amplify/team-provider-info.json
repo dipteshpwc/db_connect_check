@@ -1,0 +1,23 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-dbconnectcheck-dev-d3bf4-authRole",
+      "UnauthRoleArn": "arn:aws:iam::149536492076:role/amplify-dbconnectcheck-dev-d3bf4-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::149536492076:role/amplify-dbconnectcheck-dev-d3bf4-authRole",
+      "Region": "ap-south-1",
+      "DeploymentBucketName": "amplify-dbconnectcheck-dev-d3bf4-deployment",
+      "UnauthRoleName": "amplify-dbconnectcheck-dev-d3bf4-unauthRole",
+      "StackName": "amplify-dbconnectcheck-dev-d3bf4",
+      "StackId": "arn:aws:cloudformation:ap-south-1:149536492076:stack/amplify-dbconnectcheck-dev-d3bf4/65dcb5e0-6643-11ef-96de-0ab016f3a637",
+      "AmplifyAppId": "d3m020q6k9pwdi"
+    },
+    "categories": {
+      "auth": {
+        "dbconnectcheck57d70c51": {}
+      },
+      "api": {
+        "dbconnectcheck": {}
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "AppSyncApiName": "dbconnectcheck",
+  "DynamoDBBillingMode": "PAY_PER_REQUEST",
+  "DynamoDBEnableServerSideEncryption": false,
+  "AuthCognitoUserPoolId": {
+    "Fn::GetAtt": [
+      "authdbconnectcheck57d70c51",
+      "Outputs.UserPoolId"
+    ]
+  }
+}
