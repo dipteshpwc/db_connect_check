@@ -27,8 +27,8 @@ function App() {
       query: createTodo,
       variables: {
         input: {
-          name:"Dump6",
-          description:"21/08/2024",
+          name:"Dump1",
+          description:"29/08/2024",
         }
       }
     });
@@ -40,8 +40,8 @@ function App() {
       query: updateTodo,
       variables: {
         input: {
-          id: "6dd10ceb-f482-404b-bbcc-f762694f102f",
-          name:"Dump5",
+          id: "4c4c35e2-ab77-4e9c-aa0a-ca55ada16170",
+          name:"Dump11",
         }
       }
     });
@@ -81,8 +81,8 @@ function App() {
           <button onClick={signOut}>Sign Out</button>
           <button onClick={storeTodo}>New Todo</button>
           <button onClick={fetchTodos}>Fetch Todos</button>
-          <button onClick={fetchTodo}>Fetch Todo</button>
-          <button onClick={changeTodo}>Change Todo</button>
+          <button onClick={fetchTodo}>Fetch Todo - test</button>
+          <button onClick={changeTodo}>Change Todo - test</button>
   
           <Router>
             <div>
