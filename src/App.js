@@ -11,9 +11,11 @@ import { listTodos, getTodo } from './graphql/queries';
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Graph from './components/Graph/Graph';
+import DesignPage from './components/DesignPage/DesignPage';
 import { useState } from 'react';
 
 import '@aws-amplify/ui-react/styles.css';
+import GraphTest from './components/GraphTest/GraphTest';
 
 Amplify.configure(awsExports);
 const client = generateClient();
@@ -88,6 +90,8 @@ function App() {
             <div>
               <Routes>
                 <Route path="/graph" element={<Graph items={sortedItems} />} />
+                <Route path="/designPage" element={<DesignPage />} />
+                <Route path="/graphTest" element={<GraphTest />} />
               </Routes>
             </div>
           </Router>

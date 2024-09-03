@@ -7,3 +7,288 @@ type Todo @model @auth(rules: [{ allow: owner }]){
   name: String!
   description: String
 }
+
+type SysInfo @model @auth(rules: [{ allow: owner }]){
+  id: ID!
+  SAP_UNIQUENUMBER: String!
+  SAP_CLIENTNAME: String
+  SAP_HOSTING_HARDWARE: String
+  SAP_PRODUCT: String
+  SAP_SYSTEM_TYPE: String
+  SAP_SID: String
+  DB_SID: String
+  SAP_ENVIRONMENT: String
+  OS_VERSION: String
+  SAP_KERNEL_VERSION: String
+  SAP_APPVERSION: String
+  SAP_DBNAME: String
+  SAP_DBVERSION: String
+  SAP_DBSIZE: String
+  SAP_UNICODE: String
+}
+
+type Jobs @model @auth(rules: [{ allow: owner }]){
+  id: ID!
+  SAP_UNIQUENUMBER: String!
+  JOB_NAME: String
+  JOB_ID: String
+  JOB_STATUS: String
+  JOB_USER_SCHEDULED: String
+  JOB_USER_AUTHORIZED: String
+  JOB_STARTDATE: String
+  JOB_STARTTIME: String
+  JOB_ENDDATE: String
+  JOB_ENDTIME: String
+  JOB_RUNTIME: String
+  JOB_COUNT: String
+}
+
+
+
+
+type LongRunningJobs @model @auth(rules: [{ allow: owner }]){
+  id: ID!
+  SAP_UNIQUENUMBER: String!
+  JOB_NAME: String
+  JOB_ID: String
+  JOB_STATUS: String
+  JOB_USER_SCHEDULED: String
+  JOB_USER_AUTHORIZED: String
+  JOB_STARTDATE: String
+  JOB_STARTTIME: String
+  JOB_ENDDATE: String
+  JOB_ENDTIME: String
+  JOB_RUNTIME: String
+  
+}
+
+
+
+type FinishedLongRunningJobs @model @auth(rules: [{ allow: owner }]){
+  id: ID!
+  SAP_UNIQUENUMBER: String!
+  JOB_NAME: String
+  JOB_ID: String
+  JOB_STATUS: String
+  JOB_USER_SCHEDULED: String
+  JOB_USER_AUTHORIZED: String
+  JOB_STARTDATE: String
+  JOB_STARTTIME: String
+  JOB_ENDDATE: String
+  JOB_ENDTIME: String
+  JOB_RUNTIME: String
+}
+
+
+
+
+
+
+
+
+
+
+type Updates @model @auth(rules: [{ allow: owner }]){
+  id: ID!
+  SAP_UNIQUENUMBER: String!
+  UPDATE_DATE: String
+  UPDATE_TIME: String
+  UPDATE_TCODE: String
+  UPDATE_USER: String
+
+}
+
+
+type Mount @model @auth(rules: [{ allow: owner }]){
+  id:ID!
+  SAP_UNIQUENUMBER: String!
+  TIME: String
+  MOUNT: String
+  PERC_USAGE: String
+  TOTAL: String
+  USED: String
+  AVAILABLE: String
+}
+
+type Iostat @model @auth(rules: [{ allow: owner }]){
+  id: ID! 
+  SAP_UNIQUENUMBER: String!
+  TIME: String
+  DISK_NAME: String
+  SAP_READ: String
+  WRITE: String
+  PERC_UTIL: String
+}
+
+type St22 @model @auth(rules: [{ allow: owner }]){
+  id:ID!
+  SAP_UNIQUENUMBER: String!
+  TIME: String
+  DUMPID: String
+  RUNTIME_ERROR: String
+  USERID: String
+  CANCELLED_PROGRAM: String
+  Count:String
+}
+
+type Transport @model @auth(rules: [{ allow: owner }]){
+  id: ID!
+  SAP_UNIQUENUMBER: String!
+  DATE_STAMP: String
+  TIME_STAMP: String
+  TR_NUMBER: String
+  SYSTEM_ID: String
+  PROJECT: String
+  TR_USER: String
+  RETURN_CODE: String
+  TR_MOVED_BY: String
+}
+
+type SMlG @model @auth(rules: [{ allow: owner }]){
+  id:ID!
+  SAP_UNIQUENUMBER: String @index(name: "SmlgByTime", queryField: "SmlgByTime", ,sortKeyFields: ["TIME"])
+  APPL_SERVER: String
+  SAP_RESPONSE_TIME: String
+  TIME: String
+}
+
+type HEALTH @model @auth(rules: [{ allow: owner }]){
+  id: ID!
+  SAP_UNIQUENUMBER: String @index(name: "healthByTime", queryField: "healthByTime", ,sortKeyFields: ["TIME"])
+  SAP_SYSTEMTYPE: String
+  SAP_ENVIRONMENT: String
+  SAP_SID: String
+  DB_SID: String
+  DB_HOSTNAME: String
+  APP_HOSTNAME: String
+  APP_IP: String
+  TIME: String
+  SERVER_AVAIL : String
+  DB_AVAIL: String
+  APP_AVAIL: String
+  OS_RAM_TOTAL: String
+  OS_RAM_FREE: String
+  OS_RAM_USAGE: String
+  OS_CPU_CORE: String
+  OS_CPU_USAGE: String
+  OS_SWAP_TOTAL: String
+  OS_SWAP_FREE: String
+  OS_SWAP_PERC: String
+  SAP_DIALOG_TOTAL: String
+  SAP_DIALOG_FREE: String
+  SAP_DIALOG_USAGE : String
+  SAP_BACKGROUND_TOTAL: String
+  SAP_BACKGROUND_FREE: String
+  SAP_BACKGROUND_USAGE: String
+  SAP_UPDATE_TOTAL: String
+  SAP_UPDATE_FREE: String
+  SAP_UPDATE_USAGE: String
+  SAP_TOTAL_JOBS: String
+  SAP_FAILED_JOBS: String
+  SAP_UPDATE_STATUS: String
+  SAP_FAILED_UPDATES: String
+  SAP_LOCK_ENTRIES: String
+  SAP_OLD_LOCKS: String
+  SAP_DB_BACKUP_DATETIME: String	
+  SAP_DB_BACKUP_STATUS: String
+  SAP_VM_BACKUP_DATETIME: String
+  SAP_VM_BACKUP_STATUS: String
+  ACTIVE_SESSIONS: String
+  ACTIVE_USERS: String
+  SAP_READ: String
+  SAP_WRIT: String
+  SAP_RECV: String
+  SAP_SEND: String
+  OS_STORAGE_TOTAL: String
+  OS_STORAGE_USED: String
+  OS_STORAGE_AVAILABLE: String
+  SAP_DIALOG_USER: String
+  SAP_SYSTEM_USER: String
+  SAP_COMMUNICATION_USER: String
+  SAP_SERVICE_USER: String
+  SAP_REFERENCE_USER: String
+  RESPONSE_TIME: String
+  SAP_DUMP_COUNT: String
+  EWA_STATUS: String
+  TR_COUNT: String
+  TR_COUNT_SUCCESS: String
+  TR_COUNT_WARNING: String
+  TR_COUNT_ERROR: String
+}
+
+
+type top20mem @model @auth(rules: [{ allow: owner }]){
+  id: ID!
+  SAP_UNIQUENUMBER: String!
+  TIME: String
+  SCHEMA_NAME: String
+  TABLE_NAME: String
+  RECORD_COUNT: String
+  RECORD_COUNT_IN_MAIN: String
+  RECORD_COUNT_IN_DELTA: String
+  READ_COUNT: String
+  WRITE_COUNT: String
+  MERGE_COUNT: String
+  MEMORY_SIZE_IN_TOTAL: String
+  MEMORY_SIZE_IN_MAIN: String
+  MEMORY_SIZE_IN_DELTA: String
+}
+
+
+type top20disk @model @auth(rules: [{ allow: owner }]){
+  id:ID!
+  SAP_UNIQUENUMBER: String!
+  TIME: String
+  SCHEMA_NAME: String
+  TABLE_NAME: String
+  PAGE_COUNT: String
+  DISK_SIZE: String
+}
+
+type top20rs @model @auth(rules: [{ allow: owner }]){
+  id: ID!
+  SAP_UNIQUENUMBER: String!
+  TIME: String
+  SCHEMA_NAME: String
+  TABLE_NAME: String
+  MEMORY_SIZE: String
+}
+
+
+
+type PerformanceIndicator @model @auth(rules: [{ allow: owner }]){
+  id:ID!
+  SAP_UNIQUENUMBER: String!
+  TIME: String
+  AREA: String
+  INDICATOR: String
+  VALUE: String
+  UNIT: String
+}
+
+
+type Overview @model @auth(rules: [{ allow: owner }]){
+  id:ID!
+  SAP_UNIQUENUMBER:String!
+  TIME: String
+  TOPIC:String
+  RATING:String
+}
+
+
+type DetailOverview @model @auth(rules: [{ allow: owner }]){
+  id:ID!
+  SAP_UNIQUENUMBER:String!
+  TIME: String
+  TOPIC:String
+  RATING:String
+  SUBTOPIC: String
+  SUBTOPIC_RATING:String
+  RECOMMENDATION: String
+}
+
+type AlertOverview @model @auth(rules: [{ allow: owner }]){
+  id: ID!
+  ALERT: String!
+  RATING: String! 
+}

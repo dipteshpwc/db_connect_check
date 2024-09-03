@@ -6,6 +6,17 @@
     "defaultAuthType": {
       "mode": "AMAZON_COGNITO_USER_POOLS",
       "cognitoUserPoolId": "authdbconnectcheck57d70c51"
-    }
+    },
+    "additionalAuthTypes": [
+      {
+        "mode": "AWS_IAM"
+      },
+      {
+        "mode": "API_KEY",
+        "expirationTime": 365,
+        "apiKeyExpirationDate": "2025-09-02T17:50:20.964Z",
+        "keyDescription": "update_role"
+      }
+    ]
   }
 }

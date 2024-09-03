@@ -3,9 +3,9 @@ import Chart from 'react-apexcharts'
 
 const Graph = ({ items }) => {
 
-    // Extract 'name' and 'description' for use in chart data
-    const names = items.map(item => item.name);
-    const descriptions = items.map(item => item.description);
+  // Extract 'name' and 'description' for use in chart data
+  const names = items.map(item => item.name);
+  const descriptions = items.map(item => item.description);
 
   const data = {
     series: [
@@ -51,11 +51,11 @@ const Graph = ({ items }) => {
         //   "2018-09-19T05:30:00.000Z",
         //   "2018-09-19T06:30:00.000Z",
         // ],
-        type: "category", // Changed from 'datetime' to 'category' since names are not dates
+        type: "date", // Changed from 'datetime' to 'category' since names are not dates
         categories: names, // Use names for x-axis categories
       },
       yaxis: {
-        show: false
+        show: true
       },
       toolbar:{
         show: false
