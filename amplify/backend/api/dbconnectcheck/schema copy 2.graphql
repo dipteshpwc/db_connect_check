@@ -1,14 +1,13 @@
 # This "input" configures a global authorization rule to enable public access to
 # all models in this schema. Learn more about authorization rules here: https://docs.amplify.aws/cli/graphql/authorization-rules
-input AMPLIFY { globalAuthRule: AuthRule = { allow: public } } # FOR TESTING ONLY!
+# input AMPLIFY { globalAuthRule: AuthRule = { allow: public } } # FOR TESTING ONLY!
 
-type Todo @model {
+type Todo @model @auth(rules: [{ allow: owner }]){
   id: ID!
   name: String!
-  description: String
+  description: Stri
 }
-
-type SysInfo @model {
+type SysInfo @model @auth(rules: [{ allow: owner }]){
   id: ID!
   SAP_UNIQUENUMBER: String!
   SAP_CLIENTNAME: String
@@ -27,7 +26,7 @@ type SysInfo @model {
   SAP_UNICODE: String
 }
 
-type Jobs @model {
+type Jobs @model @auth(rules: [{ allow: owner }]){
   id: ID!
   SAP_UNIQUENUMBER: String!
   JOB_NAME: String
@@ -46,7 +45,7 @@ type Jobs @model {
 
 
 
-type LongRunningJobs @model {
+type LongRunningJobs @model @auth(rules: [{ allow: owner }]){
   id: ID!
   SAP_UNIQUENUMBER: String!
   JOB_NAME: String
@@ -64,7 +63,7 @@ type LongRunningJobs @model {
 
 
 
-type FinishedLongRunningJobs @model {
+type FinishedLongRunningJobs @model @auth(rules: [{ allow: owner }]){
   id: ID!
   SAP_UNIQUENUMBER: String!
   JOB_NAME: String
@@ -79,7 +78,16 @@ type FinishedLongRunningJobs @model {
   JOB_RUNTIME: String
 }
 
-type Updates @model {
+
+
+
+
+
+
+
+
+
+type Updates @model @auth(rules: [{ allow: owner }]){
   id: ID!
   SAP_UNIQUENUMBER: String!
   UPDATE_DATE: String
@@ -89,7 +97,8 @@ type Updates @model {
 
 }
 
-type Mount @model {
+
+type Mount @model @auth(rules: [{ allow: owner }]){
   id:ID!
   SAP_UNIQUENUMBER: String!
   TIME: String
@@ -100,7 +109,7 @@ type Mount @model {
   AVAILABLE: String
 }
 
-type Iostat @model {
+type Iostat @model @auth(rules: [{ allow: owner }]){
   id: ID! 
   SAP_UNIQUENUMBER: String!
   TIME: String
@@ -110,7 +119,7 @@ type Iostat @model {
   PERC_UTIL: String
 }
 
-type St22 @model {
+type St22 @model @auth(rules: [{ allow: owner }]){
   id:ID!
   SAP_UNIQUENUMBER: String!
   TIME: String
@@ -121,7 +130,7 @@ type St22 @model {
   Count:String
 }
 
-type Transport @model {
+type Transport @model @auth(rules: [{ allow: owner }]){
   id: ID!
   SAP_UNIQUENUMBER: String!
   DATE_STAMP: String
@@ -134,7 +143,7 @@ type Transport @model {
   TR_MOVED_BY: String
 }
 
-type SMlG @model {
+type SMlG @model @auth(rules: [{ allow: owner }]){
   id:ID!
   SAP_UNIQUENUMBER: String @index(name: "SmlgByTime", queryField: "SmlgByTime", ,sortKeyFields: ["TIME"])
   APPL_SERVER: String
@@ -142,7 +151,7 @@ type SMlG @model {
   TIME: String
 }
 
-type HEALTH @model {
+type HEALTH @model @auth(rules: [{ allow: owner }]){
   id: ID!
   SAP_UNIQUENUMBER: String @index(name: "healthByTime", queryField: "healthByTime", ,sortKeyFields: ["TIME"])
   SAP_SYSTEMTYPE: String
@@ -207,7 +216,7 @@ type HEALTH @model {
 }
 
 
-type top20mem @model {
+type top20mem @model @auth(rules: [{ allow: owner }]){
   id: ID!
   SAP_UNIQUENUMBER: String!
   TIME: String
@@ -225,7 +234,7 @@ type top20mem @model {
 }
 
 
-type top20disk @model {
+type top20disk @model @auth(rules: [{ allow: owner }]){
   id:ID!
   SAP_UNIQUENUMBER: String!
   TIME: String
@@ -235,7 +244,7 @@ type top20disk @model {
   DISK_SIZE: String
 }
 
-type top20rs @model {
+type top20rs @model @auth(rules: [{ allow: owner }]){
   id: ID!
   SAP_UNIQUENUMBER: String!
   TIME: String
@@ -245,7 +254,8 @@ type top20rs @model {
 }
 
 
-type PerformanceIndicator @model {
+
+type PerformanceIndicator @model @auth(rules: [{ allow: owner }]){
   id:ID!
   SAP_UNIQUENUMBER: String!
   TIME: String
@@ -256,7 +266,7 @@ type PerformanceIndicator @model {
 }
 
 
-type Overview @model {
+type Overview @model @auth(rules: [{ allow: owner }]){
   id:ID!
   SAP_UNIQUENUMBER:String!
   TIME: String
@@ -265,7 +275,7 @@ type Overview @model {
 }
 
 
-type DetailOverview @model {
+type DetailOverview @model @auth(rules: [{ allow: owner }]){
   id:ID!
   SAP_UNIQUENUMBER:String!
   TIME: String
@@ -276,7 +286,7 @@ type DetailOverview @model {
   RECOMMENDATION: String
 }
 
-type AlertOverview @model {
+type AlertOverview @model @auth(rules: [{ allow: owner }]){
   id: ID!
   ALERT: String!
   RATING: String! 

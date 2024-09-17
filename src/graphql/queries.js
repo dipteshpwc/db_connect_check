@@ -9,7 +9,6 @@ export const getTodo = /* GraphQL */ `
       description
       createdAt
       updatedAt
-      owner
       __typename
     }
   }
@@ -27,7 +26,6 @@ export const listTodos = /* GraphQL */ `
         description
         createdAt
         updatedAt
-        owner
         __typename
       }
       nextToken
@@ -56,7 +54,6 @@ export const getSysInfo = /* GraphQL */ `
       SAP_UNICODE
       createdAt
       updatedAt
-      owner
       __typename
     }
   }
@@ -87,7 +84,6 @@ export const listSysInfos = /* GraphQL */ `
         SAP_UNICODE
         createdAt
         updatedAt
-        owner
         __typename
       }
       nextToken
@@ -113,7 +109,6 @@ export const getJobs = /* GraphQL */ `
       JOB_COUNT
       createdAt
       updatedAt
-      owner
       __typename
     }
   }
@@ -141,7 +136,6 @@ export const listJobs = /* GraphQL */ `
         JOB_COUNT
         createdAt
         updatedAt
-        owner
         __typename
       }
       nextToken
@@ -166,7 +160,6 @@ export const getLongRunningJobs = /* GraphQL */ `
       JOB_RUNTIME
       createdAt
       updatedAt
-      owner
       __typename
     }
   }
@@ -193,7 +186,6 @@ export const listLongRunningJobs = /* GraphQL */ `
         JOB_RUNTIME
         createdAt
         updatedAt
-        owner
         __typename
       }
       nextToken
@@ -218,7 +210,6 @@ export const getFinishedLongRunningJobs = /* GraphQL */ `
       JOB_RUNTIME
       createdAt
       updatedAt
-      owner
       __typename
     }
   }
@@ -249,7 +240,6 @@ export const listFinishedLongRunningJobs = /* GraphQL */ `
         JOB_RUNTIME
         createdAt
         updatedAt
-        owner
         __typename
       }
       nextToken
@@ -268,7 +258,6 @@ export const getUpdates = /* GraphQL */ `
       UPDATE_USER
       createdAt
       updatedAt
-      owner
       __typename
     }
   }
@@ -289,7 +278,6 @@ export const listUpdates = /* GraphQL */ `
         UPDATE_USER
         createdAt
         updatedAt
-        owner
         __typename
       }
       nextToken
@@ -310,7 +298,6 @@ export const getMount = /* GraphQL */ `
       AVAILABLE
       createdAt
       updatedAt
-      owner
       __typename
     }
   }
@@ -333,7 +320,6 @@ export const listMounts = /* GraphQL */ `
         AVAILABLE
         createdAt
         updatedAt
-        owner
         __typename
       }
       nextToken
@@ -353,7 +339,6 @@ export const getIostat = /* GraphQL */ `
       PERC_UTIL
       createdAt
       updatedAt
-      owner
       __typename
     }
   }
@@ -375,7 +360,6 @@ export const listIostats = /* GraphQL */ `
         PERC_UTIL
         createdAt
         updatedAt
-        owner
         __typename
       }
       nextToken
@@ -396,7 +380,6 @@ export const getSt22 = /* GraphQL */ `
       Count
       createdAt
       updatedAt
-      owner
       __typename
     }
   }
@@ -419,7 +402,6 @@ export const listSt22s = /* GraphQL */ `
         Count
         createdAt
         updatedAt
-        owner
         __typename
       }
       nextToken
@@ -442,7 +424,6 @@ export const getTransport = /* GraphQL */ `
       TR_MOVED_BY
       createdAt
       updatedAt
-      owner
       __typename
     }
   }
@@ -467,7 +448,6 @@ export const listTransports = /* GraphQL */ `
         TR_MOVED_BY
         createdAt
         updatedAt
-        owner
         __typename
       }
       nextToken
@@ -485,7 +465,6 @@ export const getSMlG = /* GraphQL */ `
       TIME
       createdAt
       updatedAt
-      owner
       __typename
     }
   }
@@ -505,7 +484,6 @@ export const listSMlGS = /* GraphQL */ `
         TIME
         createdAt
         updatedAt
-        owner
         __typename
       }
       nextToken
@@ -579,7 +557,6 @@ export const getHEALTH = /* GraphQL */ `
       TR_COUNT_ERROR
       createdAt
       updatedAt
-      owner
       __typename
     }
   }
@@ -655,7 +632,6 @@ export const listHEALTH = /* GraphQL */ `
         TR_COUNT_ERROR
         createdAt
         updatedAt
-        owner
         __typename
       }
       nextToken
@@ -682,7 +658,6 @@ export const getTop20mem = /* GraphQL */ `
       MEMORY_SIZE_IN_DELTA
       createdAt
       updatedAt
-      owner
       __typename
     }
   }
@@ -711,7 +686,6 @@ export const listTop20mems = /* GraphQL */ `
         MEMORY_SIZE_IN_DELTA
         createdAt
         updatedAt
-        owner
         __typename
       }
       nextToken
@@ -731,7 +705,6 @@ export const getTop20disk = /* GraphQL */ `
       DISK_SIZE
       createdAt
       updatedAt
-      owner
       __typename
     }
   }
@@ -753,7 +726,6 @@ export const listTop20disks = /* GraphQL */ `
         DISK_SIZE
         createdAt
         updatedAt
-        owner
         __typename
       }
       nextToken
@@ -772,7 +744,6 @@ export const getTop20rs = /* GraphQL */ `
       MEMORY_SIZE
       createdAt
       updatedAt
-      owner
       __typename
     }
   }
@@ -793,7 +764,6 @@ export const listTop20rs = /* GraphQL */ `
         MEMORY_SIZE
         createdAt
         updatedAt
-        owner
         __typename
       }
       nextToken
@@ -813,7 +783,6 @@ export const getPerformanceIndicator = /* GraphQL */ `
       UNIT
       createdAt
       updatedAt
-      owner
       __typename
     }
   }
@@ -839,7 +808,6 @@ export const listPerformanceIndicators = /* GraphQL */ `
         UNIT
         createdAt
         updatedAt
-        owner
         __typename
       }
       nextToken
@@ -857,7 +825,6 @@ export const getOverview = /* GraphQL */ `
       RATING
       createdAt
       updatedAt
-      owner
       __typename
     }
   }
@@ -877,7 +844,6 @@ export const listOverviews = /* GraphQL */ `
         RATING
         createdAt
         updatedAt
-        owner
         __typename
       }
       nextToken
@@ -898,7 +864,6 @@ export const getDetailOverview = /* GraphQL */ `
       RECOMMENDATION
       createdAt
       updatedAt
-      owner
       __typename
     }
   }
@@ -921,7 +886,6 @@ export const listDetailOverviews = /* GraphQL */ `
         RECOMMENDATION
         createdAt
         updatedAt
-        owner
         __typename
       }
       nextToken
@@ -937,7 +901,6 @@ export const getAlertOverview = /* GraphQL */ `
       RATING
       createdAt
       updatedAt
-      owner
       __typename
     }
   }
@@ -955,7 +918,6 @@ export const listAlertOverviews = /* GraphQL */ `
         RATING
         createdAt
         updatedAt
-        owner
         __typename
       }
       nextToken
@@ -988,7 +950,6 @@ export const SmlgByTime = /* GraphQL */ `
         TIME
         createdAt
         updatedAt
-        owner
         __typename
       }
       nextToken
@@ -1077,7 +1038,6 @@ export const healthByTime = /* GraphQL */ `
         TR_COUNT_ERROR
         createdAt
         updatedAt
-        owner
         __typename
       }
       nextToken

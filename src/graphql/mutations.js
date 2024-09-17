@@ -12,7 +12,6 @@ export const createTodo = /* GraphQL */ `
       description
       createdAt
       updatedAt
-      owner
       __typename
     }
   }
@@ -28,7 +27,6 @@ export const updateTodo = /* GraphQL */ `
       description
       createdAt
       updatedAt
-      owner
       __typename
     }
   }
@@ -44,7 +42,6 @@ export const deleteTodo = /* GraphQL */ `
       description
       createdAt
       updatedAt
-      owner
       __typename
     }
   }
@@ -73,7 +70,6 @@ export const createSysInfo = /* GraphQL */ `
       SAP_UNICODE
       createdAt
       updatedAt
-      owner
       __typename
     }
   }
@@ -102,7 +98,6 @@ export const updateSysInfo = /* GraphQL */ `
       SAP_UNICODE
       createdAt
       updatedAt
-      owner
       __typename
     }
   }
@@ -131,7 +126,6 @@ export const deleteSysInfo = /* GraphQL */ `
       SAP_UNICODE
       createdAt
       updatedAt
-      owner
       __typename
     }
   }
@@ -157,7 +151,6 @@ export const createJobs = /* GraphQL */ `
       JOB_COUNT
       createdAt
       updatedAt
-      owner
       __typename
     }
   }
@@ -183,7 +176,6 @@ export const updateJobs = /* GraphQL */ `
       JOB_COUNT
       createdAt
       updatedAt
-      owner
       __typename
     }
   }
@@ -209,7 +201,6 @@ export const deleteJobs = /* GraphQL */ `
       JOB_COUNT
       createdAt
       updatedAt
-      owner
       __typename
     }
   }
@@ -234,7 +225,6 @@ export const createLongRunningJobs = /* GraphQL */ `
       JOB_RUNTIME
       createdAt
       updatedAt
-      owner
       __typename
     }
   }
@@ -259,7 +249,6 @@ export const updateLongRunningJobs = /* GraphQL */ `
       JOB_RUNTIME
       createdAt
       updatedAt
-      owner
       __typename
     }
   }
@@ -284,7 +273,6 @@ export const deleteLongRunningJobs = /* GraphQL */ `
       JOB_RUNTIME
       createdAt
       updatedAt
-      owner
       __typename
     }
   }
@@ -309,7 +297,6 @@ export const createFinishedLongRunningJobs = /* GraphQL */ `
       JOB_RUNTIME
       createdAt
       updatedAt
-      owner
       __typename
     }
   }
@@ -334,7 +321,6 @@ export const updateFinishedLongRunningJobs = /* GraphQL */ `
       JOB_RUNTIME
       createdAt
       updatedAt
-      owner
       __typename
     }
   }
@@ -359,7 +345,6 @@ export const deleteFinishedLongRunningJobs = /* GraphQL */ `
       JOB_RUNTIME
       createdAt
       updatedAt
-      owner
       __typename
     }
   }
@@ -378,7 +363,6 @@ export const createUpdates = /* GraphQL */ `
       UPDATE_USER
       createdAt
       updatedAt
-      owner
       __typename
     }
   }
@@ -397,7 +381,6 @@ export const updateUpdates = /* GraphQL */ `
       UPDATE_USER
       createdAt
       updatedAt
-      owner
       __typename
     }
   }
@@ -416,7 +399,6 @@ export const deleteUpdates = /* GraphQL */ `
       UPDATE_USER
       createdAt
       updatedAt
-      owner
       __typename
     }
   }
@@ -437,7 +419,6 @@ export const createMount = /* GraphQL */ `
       AVAILABLE
       createdAt
       updatedAt
-      owner
       __typename
     }
   }
@@ -458,7 +439,6 @@ export const updateMount = /* GraphQL */ `
       AVAILABLE
       createdAt
       updatedAt
-      owner
       __typename
     }
   }
@@ -479,7 +459,6 @@ export const deleteMount = /* GraphQL */ `
       AVAILABLE
       createdAt
       updatedAt
-      owner
       __typename
     }
   }
@@ -499,7 +478,6 @@ export const createIostat = /* GraphQL */ `
       PERC_UTIL
       createdAt
       updatedAt
-      owner
       __typename
     }
   }
@@ -519,7 +497,6 @@ export const updateIostat = /* GraphQL */ `
       PERC_UTIL
       createdAt
       updatedAt
-      owner
       __typename
     }
   }
@@ -539,7 +516,6 @@ export const deleteIostat = /* GraphQL */ `
       PERC_UTIL
       createdAt
       updatedAt
-      owner
       __typename
     }
   }
@@ -560,7 +536,6 @@ export const createSt22 = /* GraphQL */ `
       Count
       createdAt
       updatedAt
-      owner
       __typename
     }
   }
@@ -581,7 +556,6 @@ export const updateSt22 = /* GraphQL */ `
       Count
       createdAt
       updatedAt
-      owner
       __typename
     }
   }
@@ -602,7 +576,6 @@ export const deleteSt22 = /* GraphQL */ `
       Count
       createdAt
       updatedAt
-      owner
       __typename
     }
   }
@@ -625,7 +598,6 @@ export const createTransport = /* GraphQL */ `
       TR_MOVED_BY
       createdAt
       updatedAt
-      owner
       __typename
     }
   }
@@ -648,7 +620,6 @@ export const updateTransport = /* GraphQL */ `
       TR_MOVED_BY
       createdAt
       updatedAt
-      owner
       __typename
     }
   }
@@ -671,7 +642,6 @@ export const deleteTransport = /* GraphQL */ `
       TR_MOVED_BY
       createdAt
       updatedAt
-      owner
       __typename
     }
   }
@@ -689,7 +659,6 @@ export const createSMlG = /* GraphQL */ `
       TIME
       createdAt
       updatedAt
-      owner
       __typename
     }
   }
@@ -707,7 +676,6 @@ export const updateSMlG = /* GraphQL */ `
       TIME
       createdAt
       updatedAt
-      owner
       __typename
     }
   }
@@ -725,7 +693,6 @@ export const deleteSMlG = /* GraphQL */ `
       TIME
       createdAt
       updatedAt
-      owner
       __typename
     }
   }
@@ -799,7 +766,6 @@ export const createHEALTH = /* GraphQL */ `
       TR_COUNT_ERROR
       createdAt
       updatedAt
-      owner
       __typename
     }
   }
@@ -873,7 +839,6 @@ export const updateHEALTH = /* GraphQL */ `
       TR_COUNT_ERROR
       createdAt
       updatedAt
-      owner
       __typename
     }
   }
@@ -947,7 +912,6 @@ export const deleteHEALTH = /* GraphQL */ `
       TR_COUNT_ERROR
       createdAt
       updatedAt
-      owner
       __typename
     }
   }
@@ -974,7 +938,6 @@ export const createTop20mem = /* GraphQL */ `
       MEMORY_SIZE_IN_DELTA
       createdAt
       updatedAt
-      owner
       __typename
     }
   }
@@ -1001,7 +964,6 @@ export const updateTop20mem = /* GraphQL */ `
       MEMORY_SIZE_IN_DELTA
       createdAt
       updatedAt
-      owner
       __typename
     }
   }
@@ -1028,7 +990,6 @@ export const deleteTop20mem = /* GraphQL */ `
       MEMORY_SIZE_IN_DELTA
       createdAt
       updatedAt
-      owner
       __typename
     }
   }
@@ -1048,7 +1009,6 @@ export const createTop20disk = /* GraphQL */ `
       DISK_SIZE
       createdAt
       updatedAt
-      owner
       __typename
     }
   }
@@ -1068,7 +1028,6 @@ export const updateTop20disk = /* GraphQL */ `
       DISK_SIZE
       createdAt
       updatedAt
-      owner
       __typename
     }
   }
@@ -1088,7 +1047,6 @@ export const deleteTop20disk = /* GraphQL */ `
       DISK_SIZE
       createdAt
       updatedAt
-      owner
       __typename
     }
   }
@@ -1107,7 +1065,6 @@ export const createTop20rs = /* GraphQL */ `
       MEMORY_SIZE
       createdAt
       updatedAt
-      owner
       __typename
     }
   }
@@ -1126,7 +1083,6 @@ export const updateTop20rs = /* GraphQL */ `
       MEMORY_SIZE
       createdAt
       updatedAt
-      owner
       __typename
     }
   }
@@ -1145,7 +1101,6 @@ export const deleteTop20rs = /* GraphQL */ `
       MEMORY_SIZE
       createdAt
       updatedAt
-      owner
       __typename
     }
   }
@@ -1165,7 +1120,6 @@ export const createPerformanceIndicator = /* GraphQL */ `
       UNIT
       createdAt
       updatedAt
-      owner
       __typename
     }
   }
@@ -1185,7 +1139,6 @@ export const updatePerformanceIndicator = /* GraphQL */ `
       UNIT
       createdAt
       updatedAt
-      owner
       __typename
     }
   }
@@ -1205,7 +1158,6 @@ export const deletePerformanceIndicator = /* GraphQL */ `
       UNIT
       createdAt
       updatedAt
-      owner
       __typename
     }
   }
@@ -1223,7 +1175,6 @@ export const createOverview = /* GraphQL */ `
       RATING
       createdAt
       updatedAt
-      owner
       __typename
     }
   }
@@ -1241,7 +1192,6 @@ export const updateOverview = /* GraphQL */ `
       RATING
       createdAt
       updatedAt
-      owner
       __typename
     }
   }
@@ -1259,7 +1209,6 @@ export const deleteOverview = /* GraphQL */ `
       RATING
       createdAt
       updatedAt
-      owner
       __typename
     }
   }
@@ -1280,7 +1229,6 @@ export const createDetailOverview = /* GraphQL */ `
       RECOMMENDATION
       createdAt
       updatedAt
-      owner
       __typename
     }
   }
@@ -1301,7 +1249,6 @@ export const updateDetailOverview = /* GraphQL */ `
       RECOMMENDATION
       createdAt
       updatedAt
-      owner
       __typename
     }
   }
@@ -1322,7 +1269,6 @@ export const deleteDetailOverview = /* GraphQL */ `
       RECOMMENDATION
       createdAt
       updatedAt
-      owner
       __typename
     }
   }
@@ -1338,7 +1284,6 @@ export const createAlertOverview = /* GraphQL */ `
       RATING
       createdAt
       updatedAt
-      owner
       __typename
     }
   }
@@ -1354,7 +1299,6 @@ export const updateAlertOverview = /* GraphQL */ `
       RATING
       createdAt
       updatedAt
-      owner
       __typename
     }
   }
@@ -1370,7 +1314,6 @@ export const deleteAlertOverview = /* GraphQL */ `
       RATING
       createdAt
       updatedAt
-      owner
       __typename
     }
   }

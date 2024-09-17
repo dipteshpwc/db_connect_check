@@ -1,35 +1,21 @@
 {
   "api": {
     "dbconnectcheck": {
-      "dependsOn": [
-        {
-          "attributes": [
-            "UserPoolId"
-          ],
-          "category": "auth",
-          "resourceName": "dbconnectcheck57d70c51"
-        }
-      ],
+      "dependsOn": [],
       "output": {
         "authConfig": {
           "additionalAuthenticationProviders": [
             {
               "authenticationType": "AWS_IAM"
-            },
-            {
-              "apiKeyConfig": {
-                "apiKeyExpirationDate": "2025-09-02T17:50:20.964Z",
-                "apiKeyExpirationDays": 365,
-                "description": "update_role"
-              },
-              "authenticationType": "API_KEY"
             }
           ],
           "defaultAuthentication": {
-            "authenticationType": "AMAZON_COGNITO_USER_POOLS",
-            "userPoolConfig": {
-              "userPoolId": "authdbconnectcheck57d70c51"
-            }
+            "apiKeyConfig": {
+              "apiKeyExpirationDate": "2025-09-17T20:01:50.402Z",
+              "apiKeyExpirationDays": 365,
+              "description": "Data"
+            },
+            "authenticationType": "API_KEY"
           }
         }
       },

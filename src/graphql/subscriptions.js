@@ -2,59 +2,44 @@
 // this is an auto generated file. This will be overwritten
 
 export const onCreateTodo = /* GraphQL */ `
-  subscription OnCreateTodo(
-    $filter: ModelSubscriptionTodoFilterInput
-    $owner: String
-  ) {
-    onCreateTodo(filter: $filter, owner: $owner) {
+  subscription OnCreateTodo($filter: ModelSubscriptionTodoFilterInput) {
+    onCreateTodo(filter: $filter) {
       id
       name
       description
       createdAt
       updatedAt
-      owner
       __typename
     }
   }
 `;
 export const onUpdateTodo = /* GraphQL */ `
-  subscription OnUpdateTodo(
-    $filter: ModelSubscriptionTodoFilterInput
-    $owner: String
-  ) {
-    onUpdateTodo(filter: $filter, owner: $owner) {
+  subscription OnUpdateTodo($filter: ModelSubscriptionTodoFilterInput) {
+    onUpdateTodo(filter: $filter) {
       id
       name
       description
       createdAt
       updatedAt
-      owner
       __typename
     }
   }
 `;
 export const onDeleteTodo = /* GraphQL */ `
-  subscription OnDeleteTodo(
-    $filter: ModelSubscriptionTodoFilterInput
-    $owner: String
-  ) {
-    onDeleteTodo(filter: $filter, owner: $owner) {
+  subscription OnDeleteTodo($filter: ModelSubscriptionTodoFilterInput) {
+    onDeleteTodo(filter: $filter) {
       id
       name
       description
       createdAt
       updatedAt
-      owner
       __typename
     }
   }
 `;
 export const onCreateSysInfo = /* GraphQL */ `
-  subscription OnCreateSysInfo(
-    $filter: ModelSubscriptionSysInfoFilterInput
-    $owner: String
-  ) {
-    onCreateSysInfo(filter: $filter, owner: $owner) {
+  subscription OnCreateSysInfo($filter: ModelSubscriptionSysInfoFilterInput) {
+    onCreateSysInfo(filter: $filter) {
       id
       SAP_UNIQUENUMBER
       SAP_CLIENTNAME
@@ -73,17 +58,13 @@ export const onCreateSysInfo = /* GraphQL */ `
       SAP_UNICODE
       createdAt
       updatedAt
-      owner
       __typename
     }
   }
 `;
 export const onUpdateSysInfo = /* GraphQL */ `
-  subscription OnUpdateSysInfo(
-    $filter: ModelSubscriptionSysInfoFilterInput
-    $owner: String
-  ) {
-    onUpdateSysInfo(filter: $filter, owner: $owner) {
+  subscription OnUpdateSysInfo($filter: ModelSubscriptionSysInfoFilterInput) {
+    onUpdateSysInfo(filter: $filter) {
       id
       SAP_UNIQUENUMBER
       SAP_CLIENTNAME
@@ -102,17 +83,13 @@ export const onUpdateSysInfo = /* GraphQL */ `
       SAP_UNICODE
       createdAt
       updatedAt
-      owner
       __typename
     }
   }
 `;
 export const onDeleteSysInfo = /* GraphQL */ `
-  subscription OnDeleteSysInfo(
-    $filter: ModelSubscriptionSysInfoFilterInput
-    $owner: String
-  ) {
-    onDeleteSysInfo(filter: $filter, owner: $owner) {
+  subscription OnDeleteSysInfo($filter: ModelSubscriptionSysInfoFilterInput) {
+    onDeleteSysInfo(filter: $filter) {
       id
       SAP_UNIQUENUMBER
       SAP_CLIENTNAME
@@ -131,17 +108,13 @@ export const onDeleteSysInfo = /* GraphQL */ `
       SAP_UNICODE
       createdAt
       updatedAt
-      owner
       __typename
     }
   }
 `;
 export const onCreateJobs = /* GraphQL */ `
-  subscription OnCreateJobs(
-    $filter: ModelSubscriptionJobsFilterInput
-    $owner: String
-  ) {
-    onCreateJobs(filter: $filter, owner: $owner) {
+  subscription OnCreateJobs($filter: ModelSubscriptionJobsFilterInput) {
+    onCreateJobs(filter: $filter) {
       id
       SAP_UNIQUENUMBER
       JOB_NAME
@@ -157,17 +130,13 @@ export const onCreateJobs = /* GraphQL */ `
       JOB_COUNT
       createdAt
       updatedAt
-      owner
       __typename
     }
   }
 `;
 export const onUpdateJobs = /* GraphQL */ `
-  subscription OnUpdateJobs(
-    $filter: ModelSubscriptionJobsFilterInput
-    $owner: String
-  ) {
-    onUpdateJobs(filter: $filter, owner: $owner) {
+  subscription OnUpdateJobs($filter: ModelSubscriptionJobsFilterInput) {
+    onUpdateJobs(filter: $filter) {
       id
       SAP_UNIQUENUMBER
       JOB_NAME
@@ -183,17 +152,13 @@ export const onUpdateJobs = /* GraphQL */ `
       JOB_COUNT
       createdAt
       updatedAt
-      owner
       __typename
     }
   }
 `;
 export const onDeleteJobs = /* GraphQL */ `
-  subscription OnDeleteJobs(
-    $filter: ModelSubscriptionJobsFilterInput
-    $owner: String
-  ) {
-    onDeleteJobs(filter: $filter, owner: $owner) {
+  subscription OnDeleteJobs($filter: ModelSubscriptionJobsFilterInput) {
+    onDeleteJobs(filter: $filter) {
       id
       SAP_UNIQUENUMBER
       JOB_NAME
@@ -209,7 +174,6 @@ export const onDeleteJobs = /* GraphQL */ `
       JOB_COUNT
       createdAt
       updatedAt
-      owner
       __typename
     }
   }
@@ -217,9 +181,8 @@ export const onDeleteJobs = /* GraphQL */ `
 export const onCreateLongRunningJobs = /* GraphQL */ `
   subscription OnCreateLongRunningJobs(
     $filter: ModelSubscriptionLongRunningJobsFilterInput
-    $owner: String
   ) {
-    onCreateLongRunningJobs(filter: $filter, owner: $owner) {
+    onCreateLongRunningJobs(filter: $filter) {
       id
       SAP_UNIQUENUMBER
       JOB_NAME
@@ -234,7 +197,6 @@ export const onCreateLongRunningJobs = /* GraphQL */ `
       JOB_RUNTIME
       createdAt
       updatedAt
-      owner
       __typename
     }
   }
@@ -242,9 +204,8 @@ export const onCreateLongRunningJobs = /* GraphQL */ `
 export const onUpdateLongRunningJobs = /* GraphQL */ `
   subscription OnUpdateLongRunningJobs(
     $filter: ModelSubscriptionLongRunningJobsFilterInput
-    $owner: String
   ) {
-    onUpdateLongRunningJobs(filter: $filter, owner: $owner) {
+    onUpdateLongRunningJobs(filter: $filter) {
       id
       SAP_UNIQUENUMBER
       JOB_NAME
@@ -259,7 +220,6 @@ export const onUpdateLongRunningJobs = /* GraphQL */ `
       JOB_RUNTIME
       createdAt
       updatedAt
-      owner
       __typename
     }
   }
@@ -267,9 +227,8 @@ export const onUpdateLongRunningJobs = /* GraphQL */ `
 export const onDeleteLongRunningJobs = /* GraphQL */ `
   subscription OnDeleteLongRunningJobs(
     $filter: ModelSubscriptionLongRunningJobsFilterInput
-    $owner: String
   ) {
-    onDeleteLongRunningJobs(filter: $filter, owner: $owner) {
+    onDeleteLongRunningJobs(filter: $filter) {
       id
       SAP_UNIQUENUMBER
       JOB_NAME
@@ -284,7 +243,6 @@ export const onDeleteLongRunningJobs = /* GraphQL */ `
       JOB_RUNTIME
       createdAt
       updatedAt
-      owner
       __typename
     }
   }
@@ -292,9 +250,8 @@ export const onDeleteLongRunningJobs = /* GraphQL */ `
 export const onCreateFinishedLongRunningJobs = /* GraphQL */ `
   subscription OnCreateFinishedLongRunningJobs(
     $filter: ModelSubscriptionFinishedLongRunningJobsFilterInput
-    $owner: String
   ) {
-    onCreateFinishedLongRunningJobs(filter: $filter, owner: $owner) {
+    onCreateFinishedLongRunningJobs(filter: $filter) {
       id
       SAP_UNIQUENUMBER
       JOB_NAME
@@ -309,7 +266,6 @@ export const onCreateFinishedLongRunningJobs = /* GraphQL */ `
       JOB_RUNTIME
       createdAt
       updatedAt
-      owner
       __typename
     }
   }
@@ -317,9 +273,8 @@ export const onCreateFinishedLongRunningJobs = /* GraphQL */ `
 export const onUpdateFinishedLongRunningJobs = /* GraphQL */ `
   subscription OnUpdateFinishedLongRunningJobs(
     $filter: ModelSubscriptionFinishedLongRunningJobsFilterInput
-    $owner: String
   ) {
-    onUpdateFinishedLongRunningJobs(filter: $filter, owner: $owner) {
+    onUpdateFinishedLongRunningJobs(filter: $filter) {
       id
       SAP_UNIQUENUMBER
       JOB_NAME
@@ -334,7 +289,6 @@ export const onUpdateFinishedLongRunningJobs = /* GraphQL */ `
       JOB_RUNTIME
       createdAt
       updatedAt
-      owner
       __typename
     }
   }
@@ -342,9 +296,8 @@ export const onUpdateFinishedLongRunningJobs = /* GraphQL */ `
 export const onDeleteFinishedLongRunningJobs = /* GraphQL */ `
   subscription OnDeleteFinishedLongRunningJobs(
     $filter: ModelSubscriptionFinishedLongRunningJobsFilterInput
-    $owner: String
   ) {
-    onDeleteFinishedLongRunningJobs(filter: $filter, owner: $owner) {
+    onDeleteFinishedLongRunningJobs(filter: $filter) {
       id
       SAP_UNIQUENUMBER
       JOB_NAME
@@ -359,17 +312,13 @@ export const onDeleteFinishedLongRunningJobs = /* GraphQL */ `
       JOB_RUNTIME
       createdAt
       updatedAt
-      owner
       __typename
     }
   }
 `;
 export const onCreateUpdates = /* GraphQL */ `
-  subscription OnCreateUpdates(
-    $filter: ModelSubscriptionUpdatesFilterInput
-    $owner: String
-  ) {
-    onCreateUpdates(filter: $filter, owner: $owner) {
+  subscription OnCreateUpdates($filter: ModelSubscriptionUpdatesFilterInput) {
+    onCreateUpdates(filter: $filter) {
       id
       SAP_UNIQUENUMBER
       UPDATE_DATE
@@ -378,17 +327,13 @@ export const onCreateUpdates = /* GraphQL */ `
       UPDATE_USER
       createdAt
       updatedAt
-      owner
       __typename
     }
   }
 `;
 export const onUpdateUpdates = /* GraphQL */ `
-  subscription OnUpdateUpdates(
-    $filter: ModelSubscriptionUpdatesFilterInput
-    $owner: String
-  ) {
-    onUpdateUpdates(filter: $filter, owner: $owner) {
+  subscription OnUpdateUpdates($filter: ModelSubscriptionUpdatesFilterInput) {
+    onUpdateUpdates(filter: $filter) {
       id
       SAP_UNIQUENUMBER
       UPDATE_DATE
@@ -397,17 +342,13 @@ export const onUpdateUpdates = /* GraphQL */ `
       UPDATE_USER
       createdAt
       updatedAt
-      owner
       __typename
     }
   }
 `;
 export const onDeleteUpdates = /* GraphQL */ `
-  subscription OnDeleteUpdates(
-    $filter: ModelSubscriptionUpdatesFilterInput
-    $owner: String
-  ) {
-    onDeleteUpdates(filter: $filter, owner: $owner) {
+  subscription OnDeleteUpdates($filter: ModelSubscriptionUpdatesFilterInput) {
+    onDeleteUpdates(filter: $filter) {
       id
       SAP_UNIQUENUMBER
       UPDATE_DATE
@@ -416,17 +357,13 @@ export const onDeleteUpdates = /* GraphQL */ `
       UPDATE_USER
       createdAt
       updatedAt
-      owner
       __typename
     }
   }
 `;
 export const onCreateMount = /* GraphQL */ `
-  subscription OnCreateMount(
-    $filter: ModelSubscriptionMountFilterInput
-    $owner: String
-  ) {
-    onCreateMount(filter: $filter, owner: $owner) {
+  subscription OnCreateMount($filter: ModelSubscriptionMountFilterInput) {
+    onCreateMount(filter: $filter) {
       id
       SAP_UNIQUENUMBER
       TIME
@@ -437,17 +374,13 @@ export const onCreateMount = /* GraphQL */ `
       AVAILABLE
       createdAt
       updatedAt
-      owner
       __typename
     }
   }
 `;
 export const onUpdateMount = /* GraphQL */ `
-  subscription OnUpdateMount(
-    $filter: ModelSubscriptionMountFilterInput
-    $owner: String
-  ) {
-    onUpdateMount(filter: $filter, owner: $owner) {
+  subscription OnUpdateMount($filter: ModelSubscriptionMountFilterInput) {
+    onUpdateMount(filter: $filter) {
       id
       SAP_UNIQUENUMBER
       TIME
@@ -458,17 +391,13 @@ export const onUpdateMount = /* GraphQL */ `
       AVAILABLE
       createdAt
       updatedAt
-      owner
       __typename
     }
   }
 `;
 export const onDeleteMount = /* GraphQL */ `
-  subscription OnDeleteMount(
-    $filter: ModelSubscriptionMountFilterInput
-    $owner: String
-  ) {
-    onDeleteMount(filter: $filter, owner: $owner) {
+  subscription OnDeleteMount($filter: ModelSubscriptionMountFilterInput) {
+    onDeleteMount(filter: $filter) {
       id
       SAP_UNIQUENUMBER
       TIME
@@ -479,17 +408,13 @@ export const onDeleteMount = /* GraphQL */ `
       AVAILABLE
       createdAt
       updatedAt
-      owner
       __typename
     }
   }
 `;
 export const onCreateIostat = /* GraphQL */ `
-  subscription OnCreateIostat(
-    $filter: ModelSubscriptionIostatFilterInput
-    $owner: String
-  ) {
-    onCreateIostat(filter: $filter, owner: $owner) {
+  subscription OnCreateIostat($filter: ModelSubscriptionIostatFilterInput) {
+    onCreateIostat(filter: $filter) {
       id
       SAP_UNIQUENUMBER
       TIME
@@ -499,17 +424,13 @@ export const onCreateIostat = /* GraphQL */ `
       PERC_UTIL
       createdAt
       updatedAt
-      owner
       __typename
     }
   }
 `;
 export const onUpdateIostat = /* GraphQL */ `
-  subscription OnUpdateIostat(
-    $filter: ModelSubscriptionIostatFilterInput
-    $owner: String
-  ) {
-    onUpdateIostat(filter: $filter, owner: $owner) {
+  subscription OnUpdateIostat($filter: ModelSubscriptionIostatFilterInput) {
+    onUpdateIostat(filter: $filter) {
       id
       SAP_UNIQUENUMBER
       TIME
@@ -519,17 +440,13 @@ export const onUpdateIostat = /* GraphQL */ `
       PERC_UTIL
       createdAt
       updatedAt
-      owner
       __typename
     }
   }
 `;
 export const onDeleteIostat = /* GraphQL */ `
-  subscription OnDeleteIostat(
-    $filter: ModelSubscriptionIostatFilterInput
-    $owner: String
-  ) {
-    onDeleteIostat(filter: $filter, owner: $owner) {
+  subscription OnDeleteIostat($filter: ModelSubscriptionIostatFilterInput) {
+    onDeleteIostat(filter: $filter) {
       id
       SAP_UNIQUENUMBER
       TIME
@@ -539,17 +456,13 @@ export const onDeleteIostat = /* GraphQL */ `
       PERC_UTIL
       createdAt
       updatedAt
-      owner
       __typename
     }
   }
 `;
 export const onCreateSt22 = /* GraphQL */ `
-  subscription OnCreateSt22(
-    $filter: ModelSubscriptionSt22FilterInput
-    $owner: String
-  ) {
-    onCreateSt22(filter: $filter, owner: $owner) {
+  subscription OnCreateSt22($filter: ModelSubscriptionSt22FilterInput) {
+    onCreateSt22(filter: $filter) {
       id
       SAP_UNIQUENUMBER
       TIME
@@ -560,17 +473,13 @@ export const onCreateSt22 = /* GraphQL */ `
       Count
       createdAt
       updatedAt
-      owner
       __typename
     }
   }
 `;
 export const onUpdateSt22 = /* GraphQL */ `
-  subscription OnUpdateSt22(
-    $filter: ModelSubscriptionSt22FilterInput
-    $owner: String
-  ) {
-    onUpdateSt22(filter: $filter, owner: $owner) {
+  subscription OnUpdateSt22($filter: ModelSubscriptionSt22FilterInput) {
+    onUpdateSt22(filter: $filter) {
       id
       SAP_UNIQUENUMBER
       TIME
@@ -581,17 +490,13 @@ export const onUpdateSt22 = /* GraphQL */ `
       Count
       createdAt
       updatedAt
-      owner
       __typename
     }
   }
 `;
 export const onDeleteSt22 = /* GraphQL */ `
-  subscription OnDeleteSt22(
-    $filter: ModelSubscriptionSt22FilterInput
-    $owner: String
-  ) {
-    onDeleteSt22(filter: $filter, owner: $owner) {
+  subscription OnDeleteSt22($filter: ModelSubscriptionSt22FilterInput) {
+    onDeleteSt22(filter: $filter) {
       id
       SAP_UNIQUENUMBER
       TIME
@@ -602,7 +507,6 @@ export const onDeleteSt22 = /* GraphQL */ `
       Count
       createdAt
       updatedAt
-      owner
       __typename
     }
   }
@@ -610,9 +514,8 @@ export const onDeleteSt22 = /* GraphQL */ `
 export const onCreateTransport = /* GraphQL */ `
   subscription OnCreateTransport(
     $filter: ModelSubscriptionTransportFilterInput
-    $owner: String
   ) {
-    onCreateTransport(filter: $filter, owner: $owner) {
+    onCreateTransport(filter: $filter) {
       id
       SAP_UNIQUENUMBER
       DATE_STAMP
@@ -625,7 +528,6 @@ export const onCreateTransport = /* GraphQL */ `
       TR_MOVED_BY
       createdAt
       updatedAt
-      owner
       __typename
     }
   }
@@ -633,9 +535,8 @@ export const onCreateTransport = /* GraphQL */ `
 export const onUpdateTransport = /* GraphQL */ `
   subscription OnUpdateTransport(
     $filter: ModelSubscriptionTransportFilterInput
-    $owner: String
   ) {
-    onUpdateTransport(filter: $filter, owner: $owner) {
+    onUpdateTransport(filter: $filter) {
       id
       SAP_UNIQUENUMBER
       DATE_STAMP
@@ -648,7 +549,6 @@ export const onUpdateTransport = /* GraphQL */ `
       TR_MOVED_BY
       createdAt
       updatedAt
-      owner
       __typename
     }
   }
@@ -656,9 +556,8 @@ export const onUpdateTransport = /* GraphQL */ `
 export const onDeleteTransport = /* GraphQL */ `
   subscription OnDeleteTransport(
     $filter: ModelSubscriptionTransportFilterInput
-    $owner: String
   ) {
-    onDeleteTransport(filter: $filter, owner: $owner) {
+    onDeleteTransport(filter: $filter) {
       id
       SAP_UNIQUENUMBER
       DATE_STAMP
@@ -671,17 +570,13 @@ export const onDeleteTransport = /* GraphQL */ `
       TR_MOVED_BY
       createdAt
       updatedAt
-      owner
       __typename
     }
   }
 `;
 export const onCreateSMlG = /* GraphQL */ `
-  subscription OnCreateSMlG(
-    $filter: ModelSubscriptionSMlGFilterInput
-    $owner: String
-  ) {
-    onCreateSMlG(filter: $filter, owner: $owner) {
+  subscription OnCreateSMlG($filter: ModelSubscriptionSMlGFilterInput) {
+    onCreateSMlG(filter: $filter) {
       id
       SAP_UNIQUENUMBER
       APPL_SERVER
@@ -689,17 +584,13 @@ export const onCreateSMlG = /* GraphQL */ `
       TIME
       createdAt
       updatedAt
-      owner
       __typename
     }
   }
 `;
 export const onUpdateSMlG = /* GraphQL */ `
-  subscription OnUpdateSMlG(
-    $filter: ModelSubscriptionSMlGFilterInput
-    $owner: String
-  ) {
-    onUpdateSMlG(filter: $filter, owner: $owner) {
+  subscription OnUpdateSMlG($filter: ModelSubscriptionSMlGFilterInput) {
+    onUpdateSMlG(filter: $filter) {
       id
       SAP_UNIQUENUMBER
       APPL_SERVER
@@ -707,17 +598,13 @@ export const onUpdateSMlG = /* GraphQL */ `
       TIME
       createdAt
       updatedAt
-      owner
       __typename
     }
   }
 `;
 export const onDeleteSMlG = /* GraphQL */ `
-  subscription OnDeleteSMlG(
-    $filter: ModelSubscriptionSMlGFilterInput
-    $owner: String
-  ) {
-    onDeleteSMlG(filter: $filter, owner: $owner) {
+  subscription OnDeleteSMlG($filter: ModelSubscriptionSMlGFilterInput) {
+    onDeleteSMlG(filter: $filter) {
       id
       SAP_UNIQUENUMBER
       APPL_SERVER
@@ -725,17 +612,13 @@ export const onDeleteSMlG = /* GraphQL */ `
       TIME
       createdAt
       updatedAt
-      owner
       __typename
     }
   }
 `;
 export const onCreateHEALTH = /* GraphQL */ `
-  subscription OnCreateHEALTH(
-    $filter: ModelSubscriptionHEALTHFilterInput
-    $owner: String
-  ) {
-    onCreateHEALTH(filter: $filter, owner: $owner) {
+  subscription OnCreateHEALTH($filter: ModelSubscriptionHEALTHFilterInput) {
+    onCreateHEALTH(filter: $filter) {
       id
       SAP_UNIQUENUMBER
       SAP_SYSTEMTYPE
@@ -799,17 +682,13 @@ export const onCreateHEALTH = /* GraphQL */ `
       TR_COUNT_ERROR
       createdAt
       updatedAt
-      owner
       __typename
     }
   }
 `;
 export const onUpdateHEALTH = /* GraphQL */ `
-  subscription OnUpdateHEALTH(
-    $filter: ModelSubscriptionHEALTHFilterInput
-    $owner: String
-  ) {
-    onUpdateHEALTH(filter: $filter, owner: $owner) {
+  subscription OnUpdateHEALTH($filter: ModelSubscriptionHEALTHFilterInput) {
+    onUpdateHEALTH(filter: $filter) {
       id
       SAP_UNIQUENUMBER
       SAP_SYSTEMTYPE
@@ -873,17 +752,13 @@ export const onUpdateHEALTH = /* GraphQL */ `
       TR_COUNT_ERROR
       createdAt
       updatedAt
-      owner
       __typename
     }
   }
 `;
 export const onDeleteHEALTH = /* GraphQL */ `
-  subscription OnDeleteHEALTH(
-    $filter: ModelSubscriptionHEALTHFilterInput
-    $owner: String
-  ) {
-    onDeleteHEALTH(filter: $filter, owner: $owner) {
+  subscription OnDeleteHEALTH($filter: ModelSubscriptionHEALTHFilterInput) {
+    onDeleteHEALTH(filter: $filter) {
       id
       SAP_UNIQUENUMBER
       SAP_SYSTEMTYPE
@@ -947,17 +822,13 @@ export const onDeleteHEALTH = /* GraphQL */ `
       TR_COUNT_ERROR
       createdAt
       updatedAt
-      owner
       __typename
     }
   }
 `;
 export const onCreateTop20mem = /* GraphQL */ `
-  subscription OnCreateTop20mem(
-    $filter: ModelSubscriptionTop20memFilterInput
-    $owner: String
-  ) {
-    onCreateTop20mem(filter: $filter, owner: $owner) {
+  subscription OnCreateTop20mem($filter: ModelSubscriptionTop20memFilterInput) {
+    onCreateTop20mem(filter: $filter) {
       id
       SAP_UNIQUENUMBER
       TIME
@@ -974,17 +845,13 @@ export const onCreateTop20mem = /* GraphQL */ `
       MEMORY_SIZE_IN_DELTA
       createdAt
       updatedAt
-      owner
       __typename
     }
   }
 `;
 export const onUpdateTop20mem = /* GraphQL */ `
-  subscription OnUpdateTop20mem(
-    $filter: ModelSubscriptionTop20memFilterInput
-    $owner: String
-  ) {
-    onUpdateTop20mem(filter: $filter, owner: $owner) {
+  subscription OnUpdateTop20mem($filter: ModelSubscriptionTop20memFilterInput) {
+    onUpdateTop20mem(filter: $filter) {
       id
       SAP_UNIQUENUMBER
       TIME
@@ -1001,17 +868,13 @@ export const onUpdateTop20mem = /* GraphQL */ `
       MEMORY_SIZE_IN_DELTA
       createdAt
       updatedAt
-      owner
       __typename
     }
   }
 `;
 export const onDeleteTop20mem = /* GraphQL */ `
-  subscription OnDeleteTop20mem(
-    $filter: ModelSubscriptionTop20memFilterInput
-    $owner: String
-  ) {
-    onDeleteTop20mem(filter: $filter, owner: $owner) {
+  subscription OnDeleteTop20mem($filter: ModelSubscriptionTop20memFilterInput) {
+    onDeleteTop20mem(filter: $filter) {
       id
       SAP_UNIQUENUMBER
       TIME
@@ -1028,7 +891,6 @@ export const onDeleteTop20mem = /* GraphQL */ `
       MEMORY_SIZE_IN_DELTA
       createdAt
       updatedAt
-      owner
       __typename
     }
   }
@@ -1036,9 +898,8 @@ export const onDeleteTop20mem = /* GraphQL */ `
 export const onCreateTop20disk = /* GraphQL */ `
   subscription OnCreateTop20disk(
     $filter: ModelSubscriptionTop20diskFilterInput
-    $owner: String
   ) {
-    onCreateTop20disk(filter: $filter, owner: $owner) {
+    onCreateTop20disk(filter: $filter) {
       id
       SAP_UNIQUENUMBER
       TIME
@@ -1048,7 +909,6 @@ export const onCreateTop20disk = /* GraphQL */ `
       DISK_SIZE
       createdAt
       updatedAt
-      owner
       __typename
     }
   }
@@ -1056,9 +916,8 @@ export const onCreateTop20disk = /* GraphQL */ `
 export const onUpdateTop20disk = /* GraphQL */ `
   subscription OnUpdateTop20disk(
     $filter: ModelSubscriptionTop20diskFilterInput
-    $owner: String
   ) {
-    onUpdateTop20disk(filter: $filter, owner: $owner) {
+    onUpdateTop20disk(filter: $filter) {
       id
       SAP_UNIQUENUMBER
       TIME
@@ -1068,7 +927,6 @@ export const onUpdateTop20disk = /* GraphQL */ `
       DISK_SIZE
       createdAt
       updatedAt
-      owner
       __typename
     }
   }
@@ -1076,9 +934,8 @@ export const onUpdateTop20disk = /* GraphQL */ `
 export const onDeleteTop20disk = /* GraphQL */ `
   subscription OnDeleteTop20disk(
     $filter: ModelSubscriptionTop20diskFilterInput
-    $owner: String
   ) {
-    onDeleteTop20disk(filter: $filter, owner: $owner) {
+    onDeleteTop20disk(filter: $filter) {
       id
       SAP_UNIQUENUMBER
       TIME
@@ -1088,17 +945,13 @@ export const onDeleteTop20disk = /* GraphQL */ `
       DISK_SIZE
       createdAt
       updatedAt
-      owner
       __typename
     }
   }
 `;
 export const onCreateTop20rs = /* GraphQL */ `
-  subscription OnCreateTop20rs(
-    $filter: ModelSubscriptionTop20rsFilterInput
-    $owner: String
-  ) {
-    onCreateTop20rs(filter: $filter, owner: $owner) {
+  subscription OnCreateTop20rs($filter: ModelSubscriptionTop20rsFilterInput) {
+    onCreateTop20rs(filter: $filter) {
       id
       SAP_UNIQUENUMBER
       TIME
@@ -1107,17 +960,13 @@ export const onCreateTop20rs = /* GraphQL */ `
       MEMORY_SIZE
       createdAt
       updatedAt
-      owner
       __typename
     }
   }
 `;
 export const onUpdateTop20rs = /* GraphQL */ `
-  subscription OnUpdateTop20rs(
-    $filter: ModelSubscriptionTop20rsFilterInput
-    $owner: String
-  ) {
-    onUpdateTop20rs(filter: $filter, owner: $owner) {
+  subscription OnUpdateTop20rs($filter: ModelSubscriptionTop20rsFilterInput) {
+    onUpdateTop20rs(filter: $filter) {
       id
       SAP_UNIQUENUMBER
       TIME
@@ -1126,17 +975,13 @@ export const onUpdateTop20rs = /* GraphQL */ `
       MEMORY_SIZE
       createdAt
       updatedAt
-      owner
       __typename
     }
   }
 `;
 export const onDeleteTop20rs = /* GraphQL */ `
-  subscription OnDeleteTop20rs(
-    $filter: ModelSubscriptionTop20rsFilterInput
-    $owner: String
-  ) {
-    onDeleteTop20rs(filter: $filter, owner: $owner) {
+  subscription OnDeleteTop20rs($filter: ModelSubscriptionTop20rsFilterInput) {
+    onDeleteTop20rs(filter: $filter) {
       id
       SAP_UNIQUENUMBER
       TIME
@@ -1145,7 +990,6 @@ export const onDeleteTop20rs = /* GraphQL */ `
       MEMORY_SIZE
       createdAt
       updatedAt
-      owner
       __typename
     }
   }
@@ -1153,9 +997,8 @@ export const onDeleteTop20rs = /* GraphQL */ `
 export const onCreatePerformanceIndicator = /* GraphQL */ `
   subscription OnCreatePerformanceIndicator(
     $filter: ModelSubscriptionPerformanceIndicatorFilterInput
-    $owner: String
   ) {
-    onCreatePerformanceIndicator(filter: $filter, owner: $owner) {
+    onCreatePerformanceIndicator(filter: $filter) {
       id
       SAP_UNIQUENUMBER
       TIME
@@ -1165,7 +1008,6 @@ export const onCreatePerformanceIndicator = /* GraphQL */ `
       UNIT
       createdAt
       updatedAt
-      owner
       __typename
     }
   }
@@ -1173,9 +1015,8 @@ export const onCreatePerformanceIndicator = /* GraphQL */ `
 export const onUpdatePerformanceIndicator = /* GraphQL */ `
   subscription OnUpdatePerformanceIndicator(
     $filter: ModelSubscriptionPerformanceIndicatorFilterInput
-    $owner: String
   ) {
-    onUpdatePerformanceIndicator(filter: $filter, owner: $owner) {
+    onUpdatePerformanceIndicator(filter: $filter) {
       id
       SAP_UNIQUENUMBER
       TIME
@@ -1185,7 +1026,6 @@ export const onUpdatePerformanceIndicator = /* GraphQL */ `
       UNIT
       createdAt
       updatedAt
-      owner
       __typename
     }
   }
@@ -1193,9 +1033,8 @@ export const onUpdatePerformanceIndicator = /* GraphQL */ `
 export const onDeletePerformanceIndicator = /* GraphQL */ `
   subscription OnDeletePerformanceIndicator(
     $filter: ModelSubscriptionPerformanceIndicatorFilterInput
-    $owner: String
   ) {
-    onDeletePerformanceIndicator(filter: $filter, owner: $owner) {
+    onDeletePerformanceIndicator(filter: $filter) {
       id
       SAP_UNIQUENUMBER
       TIME
@@ -1205,17 +1044,13 @@ export const onDeletePerformanceIndicator = /* GraphQL */ `
       UNIT
       createdAt
       updatedAt
-      owner
       __typename
     }
   }
 `;
 export const onCreateOverview = /* GraphQL */ `
-  subscription OnCreateOverview(
-    $filter: ModelSubscriptionOverviewFilterInput
-    $owner: String
-  ) {
-    onCreateOverview(filter: $filter, owner: $owner) {
+  subscription OnCreateOverview($filter: ModelSubscriptionOverviewFilterInput) {
+    onCreateOverview(filter: $filter) {
       id
       SAP_UNIQUENUMBER
       TIME
@@ -1223,17 +1058,13 @@ export const onCreateOverview = /* GraphQL */ `
       RATING
       createdAt
       updatedAt
-      owner
       __typename
     }
   }
 `;
 export const onUpdateOverview = /* GraphQL */ `
-  subscription OnUpdateOverview(
-    $filter: ModelSubscriptionOverviewFilterInput
-    $owner: String
-  ) {
-    onUpdateOverview(filter: $filter, owner: $owner) {
+  subscription OnUpdateOverview($filter: ModelSubscriptionOverviewFilterInput) {
+    onUpdateOverview(filter: $filter) {
       id
       SAP_UNIQUENUMBER
       TIME
@@ -1241,17 +1072,13 @@ export const onUpdateOverview = /* GraphQL */ `
       RATING
       createdAt
       updatedAt
-      owner
       __typename
     }
   }
 `;
 export const onDeleteOverview = /* GraphQL */ `
-  subscription OnDeleteOverview(
-    $filter: ModelSubscriptionOverviewFilterInput
-    $owner: String
-  ) {
-    onDeleteOverview(filter: $filter, owner: $owner) {
+  subscription OnDeleteOverview($filter: ModelSubscriptionOverviewFilterInput) {
+    onDeleteOverview(filter: $filter) {
       id
       SAP_UNIQUENUMBER
       TIME
@@ -1259,7 +1086,6 @@ export const onDeleteOverview = /* GraphQL */ `
       RATING
       createdAt
       updatedAt
-      owner
       __typename
     }
   }
@@ -1267,9 +1093,8 @@ export const onDeleteOverview = /* GraphQL */ `
 export const onCreateDetailOverview = /* GraphQL */ `
   subscription OnCreateDetailOverview(
     $filter: ModelSubscriptionDetailOverviewFilterInput
-    $owner: String
   ) {
-    onCreateDetailOverview(filter: $filter, owner: $owner) {
+    onCreateDetailOverview(filter: $filter) {
       id
       SAP_UNIQUENUMBER
       TIME
@@ -1280,7 +1105,6 @@ export const onCreateDetailOverview = /* GraphQL */ `
       RECOMMENDATION
       createdAt
       updatedAt
-      owner
       __typename
     }
   }
@@ -1288,9 +1112,8 @@ export const onCreateDetailOverview = /* GraphQL */ `
 export const onUpdateDetailOverview = /* GraphQL */ `
   subscription OnUpdateDetailOverview(
     $filter: ModelSubscriptionDetailOverviewFilterInput
-    $owner: String
   ) {
-    onUpdateDetailOverview(filter: $filter, owner: $owner) {
+    onUpdateDetailOverview(filter: $filter) {
       id
       SAP_UNIQUENUMBER
       TIME
@@ -1301,7 +1124,6 @@ export const onUpdateDetailOverview = /* GraphQL */ `
       RECOMMENDATION
       createdAt
       updatedAt
-      owner
       __typename
     }
   }
@@ -1309,9 +1131,8 @@ export const onUpdateDetailOverview = /* GraphQL */ `
 export const onDeleteDetailOverview = /* GraphQL */ `
   subscription OnDeleteDetailOverview(
     $filter: ModelSubscriptionDetailOverviewFilterInput
-    $owner: String
   ) {
-    onDeleteDetailOverview(filter: $filter, owner: $owner) {
+    onDeleteDetailOverview(filter: $filter) {
       id
       SAP_UNIQUENUMBER
       TIME
@@ -1322,7 +1143,6 @@ export const onDeleteDetailOverview = /* GraphQL */ `
       RECOMMENDATION
       createdAt
       updatedAt
-      owner
       __typename
     }
   }
@@ -1330,15 +1150,13 @@ export const onDeleteDetailOverview = /* GraphQL */ `
 export const onCreateAlertOverview = /* GraphQL */ `
   subscription OnCreateAlertOverview(
     $filter: ModelSubscriptionAlertOverviewFilterInput
-    $owner: String
   ) {
-    onCreateAlertOverview(filter: $filter, owner: $owner) {
+    onCreateAlertOverview(filter: $filter) {
       id
       ALERT
       RATING
       createdAt
       updatedAt
-      owner
       __typename
     }
   }
@@ -1346,15 +1164,13 @@ export const onCreateAlertOverview = /* GraphQL */ `
 export const onUpdateAlertOverview = /* GraphQL */ `
   subscription OnUpdateAlertOverview(
     $filter: ModelSubscriptionAlertOverviewFilterInput
-    $owner: String
   ) {
-    onUpdateAlertOverview(filter: $filter, owner: $owner) {
+    onUpdateAlertOverview(filter: $filter) {
       id
       ALERT
       RATING
       createdAt
       updatedAt
-      owner
       __typename
     }
   }
@@ -1362,15 +1178,13 @@ export const onUpdateAlertOverview = /* GraphQL */ `
 export const onDeleteAlertOverview = /* GraphQL */ `
   subscription OnDeleteAlertOverview(
     $filter: ModelSubscriptionAlertOverviewFilterInput
-    $owner: String
   ) {
-    onDeleteAlertOverview(filter: $filter, owner: $owner) {
+    onDeleteAlertOverview(filter: $filter) {
       id
       ALERT
       RATING
       createdAt
       updatedAt
-      owner
       __typename
     }
   }
